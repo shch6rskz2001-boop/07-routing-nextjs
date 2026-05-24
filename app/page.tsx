@@ -1,66 +1,42 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from 'next/link'; 
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <main style={{ padding: '40px 20px', maxWidth: '800px', margin: '0 auto', fontFamily: 'sans-serif' }}>
+      <div>
+        <h1 style={{ fontSize: '2.5rem', marginBottom: '20px', color: '#333' }}>
+          Welcome to NoteHub
+        </h1>
+
+        <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#555', marginBottom: '15px' }}>
+          NoteHub is a simple and efficient application designed for
+          managing personal notes. It helps keep your thoughts organized
+          and accessible in one place, whether you are at home or on the go.
+        </p>
+
+        <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#555', marginBottom: '30px' }}>
+          The app provides a clean interface for writing, editing, and
+          browsing notes. With support for keyword search and structured
+          organization, NoteHub offers a streamlined experience for anyone
+          who values clarity and productivity.
+        </p>
+
+        {}
+        <Link 
+          href="/notes" 
+          style={{
+            display: 'inline-block',
+            padding: '12px 24px',
+            backgroundColor: '#0070f3',
+            color: 'white',
+            borderRadius: '6px',
+            textDecoration: 'none',
+            fontWeight: 'bold'
+          }}
+        >
+          Open My Notes →
+        </Link>
+      </div>
+    </main>
   );
 }
