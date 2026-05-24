@@ -43,7 +43,7 @@ export async function fetchNotes(
 }
 
 export async function createNote(payload: CreateNotePayload): Promise<Note> {
-  const response = await axiosInstance.post<Note>("/notes", payload);
+  const response = await axiosInstance.post<Note> ("/notes", payload);
   return response.data;
 }
 
