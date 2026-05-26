@@ -1,21 +1,36 @@
+/* Контейнер сторінки: робить фон сірим і центрує вміст */
 .app {
-  width: 90%;
-  max-width: 1280px;
-  margin: 0px auto;
-  padding: 0 16px 16px;
-  flex: 1;
+  width: 100%;
+  min-height: calc(100vh - 140px); /* розтягує на всю висоту між шапкою і підвалом */
+  background-color: #f8f9fa; /* сірий фон для всієї сторінки */
+  padding: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* центрує картку по горизонталі */
 }
 
+/* Верхня панель (інструменти), якщо вона є на сторінці */
 .toolbar {
+  width: 100%;
+  max-width: 760px;
   margin-bottom: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
-  background-color: #f8f9fa;
-  border-bottom: 1px solid #dee2e6;
 }
 
+
+.noteCard {
+  background-color: #ffffff; 
+  border-radius: 8px; 
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); 
+  padding: 40px; 
+  width: 100%;
+  max-width: 760px; 
+  box-sizing: border-box;
+}
+
+/* Кнопка */
 .button {
   padding: 6px 12px;
   font-size: 16px;
@@ -30,3 +45,5 @@
 .button:hover {
   background-color: #0b5ed7;
 }
+
+

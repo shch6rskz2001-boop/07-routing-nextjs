@@ -1,25 +1,17 @@
-.main {
-    flex: 1;
-}
-
 .container {
-    width: 90%;
-    max-width: 1280px;
-    margin: 0px auto;
-    padding: 0 16px 16px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 40px 140px;
 }
 
 .title {
-    font-size: 36px;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 60px;
-    text-align: center;
+  text-align: center;
+  font-size: 64px;
+  margin-bottom: 60px;
 }
 
-.description {
-    font-size: 18px;
-    color: #444444;
-    line-height: 28px;
-    margin-bottom: 16px;
-}
+.text {
+  font-size: 24px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+} 
