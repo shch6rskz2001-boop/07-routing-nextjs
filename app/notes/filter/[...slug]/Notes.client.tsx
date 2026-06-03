@@ -4,12 +4,12 @@ import { useQuery } from '@tanstack/react-query';
 import { fetchNotes } from '@/lib/api';
 import { useSearchParams } from 'next/navigation';
 import css from "./Notes.client.module.css";
-import NoteList from "../../components/NoteList/NoteList";
-import Modal from "../../components/Modal/Modal";
-import NoteForm from "../../components/NoteForm/NoteForm";
-import Pagination from "../../components/Pagination/Pagination";
-import SearchBox from "../../components/SearchBox/SearchBox";
-import Sidebar from "../../components/SidebarNotes/SidebarNotes";
+import NoteList from "../../../../components/NoteList/NoteList";
+import Modal from "../../../../components/Modal/Modal";
+import NoteForm from "../../../../components/NoteForm/NoteForm";
+import Pagination from "../../../../components/Pagination/Pagination";
+import SearchBox from "../../../../components/SearchBox/SearchBox";
+import Sidebar from "../../../../components/SidebarNotes/SidebarNotes";
 import { useState } from 'react';
 import { useDebouncedCallback } from 'use-debounce';
 
