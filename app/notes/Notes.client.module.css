@@ -66,6 +66,8 @@
   display: grid;
   grid-template-columns: 220px 1fr;
   gap: 24px;
+
+  align-items: start;
 }
 
 .content {
