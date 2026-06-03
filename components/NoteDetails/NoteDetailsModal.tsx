@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import Modal from '@/components/Modal/Modal';
-import type { Note } from '../../types/note.ts'; 
+import type { Note } from '@/types/note'; 
 
 export default function NoteDetailsModal({ note }: { note: Note }) {
   const router = useRouter();
